@@ -94,14 +94,13 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
-
-/* Contact Links */
-#contact a {
+/*Links */
+a {
     color: #ffa726;
     text-decoration: none;
 }
 
-#contact a:hover {
+a:hover {
     text-decoration: underline;
 }
 

@@ -1,74 +1,151 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset & basic styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #333;
-}
-header, nav, section, footer {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-}
-nav {
-    background: #555;
-    text-align: center;
-}
-nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-section {
-    background: #fff;
-    margin-top: 10px;
-    padding: 20px;
-    border-radius: 8px;
-}
-#technical-skills {
-    background: #fff;
-    margin-top: 20px;
-    padding: 30px;
-    border-radius: 10px;
-}
-.skills-category {
-    margin-bottom: 15px;
-}
-.skills-category h3 {
-    color: #333;
-    margin-bottom: 5px;
-}
-.skills-category p {
-    margin: 0;
-}
-#experience {
-    background: #fff;
-    padding: 30px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-.experience-item {
-    margin-bottom: 20px;
-}
-.experience-item h3 {
-    margin: 0;
-    color: #333;
-}
-.experience-item .period {
-    font-size: 0.9em;
-    color: #777;
-}
-.experience-item p {
-    margin: 5px 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Navigation */
+nav {
+    background: #2c2c2c;
+    text-align: center;
+    padding: 15px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #e0e0e0;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom: 1px solid #333;
+    transition: background 0.5s, color 0.5s;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+/* Experience / Skills styling */
+.experience-item, .skills-category, #volunteer .experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3, .skills-category h3 {
+    color: #ffa726;
+    margin-bottom: 8px;
+}
+
+.period {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Contact Links */
+#contact a {
+    color: #ffa726;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    section {
+        padding: 30px 15px;
+    }
+}
+
+/* Nice fade in on scroll */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.2s;
+}
+
+/* Each section delay for nice stagger */
+section:nth-of-type(2) { animation-delay: 0.4s; }
+section:nth-of-type(3) { animation-delay: 0.6s; }
+section:nth-of-type(4) { animation-delay: 0.8s; }
+section:nth-of-type(5) { animation-delay: 1s; }
+section:nth-of-type(6) { animation-delay: 1.2s; }
+section:nth-of-type(7) { animation-delay: 1.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

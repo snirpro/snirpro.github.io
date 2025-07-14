@@ -31,6 +31,23 @@ section {
     padding: 20px;
     border-radius: 8px;
 }
+#technical-skills {
+    background: #fff;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.skills-category {
+    margin-bottom: 15px;
+}
+.skills-category h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+.skills-category p {
+    margin: 0;
+}
+
 footer {
     text-align: center;
     padding: 10px;

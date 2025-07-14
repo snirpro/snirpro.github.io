@@ -47,6 +47,26 @@ section {
 .skills-category p {
     margin: 0;
 }
+#experience {
+    background: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.experience-item {
+    margin-bottom: 20px;
+}
+.experience-item h3 {
+    margin: 0;
+    color: #333;
+}
+.experience-item .period {
+    font-size: 0.9em;
+    color: #777;
+}
+.experience-item p {
+    margin: 5px 0;
+}
 
 footer {
     text-align: center;

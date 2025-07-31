@@ -113,9 +113,12 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     header h1 {
         font-size: 2em;
+    }
+    nav {
+        position: static; /* מבטל sticky במסכים קטנים */
     }
     nav a {
         display: block;
@@ -125,6 +128,7 @@ footer {
         padding: 30px 15px;
     }
 }
+
 
 /* Nice fade in on scroll */
 section {
